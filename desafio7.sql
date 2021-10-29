@@ -9,7 +9,7 @@ CREATE VIEW perfil_artistas AS
         SpotifyClone.usuario_historico_artista AS uh ON Ar.artista_id = uh.artista_id
             INNER JOIN
         SpotifyClone.Album AS A ON A.artista_id = Ar.artista_id
-    GROUP BY `album` , `artista`
-    ORDER BY `seguidores` DESC , `artista`;
+    GROUP BY `artista`,`album`
+    ORDER BY `seguidores` DESC , `artista`,`album`;
 
 
