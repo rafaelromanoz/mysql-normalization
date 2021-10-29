@@ -1,0 +1,1 @@
+CREATE VIEW cancoes_premium AS SELECT C.nome_cancao AS `nome`, COUNT(uc.usuario_id) AS `reproducoes` FROM SpotifyClone.Cancoes AS C INNER JOIN SpotifyClone.usuario_cancoes AS uc ON C.cancao_id = uc.cancoes_id INNER JOIN SpotifyClone.Usuario AS U ON uc.usuario_id = U.usuario_id AND U.plano_id <> 1 GROUP BY `nome`,uc.cancoes_id ORDER BY `nome`;
