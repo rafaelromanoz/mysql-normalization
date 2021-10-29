@@ -12,3 +12,4 @@ CREATE VIEW perfil_artistas AS
     GROUP BY `album` , `artista`
     ORDER BY `seguidores` DESC , `artista`;
 
+

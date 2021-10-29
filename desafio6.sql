@@ -8,3 +8,5 @@ CREATE VIEW faturamento_atual AS
         SpotifyClone.Plano AS P
             INNER JOIN
         SpotifyClone.Usuario AS U ON P.plano_id = U.plano_id;
+
+
